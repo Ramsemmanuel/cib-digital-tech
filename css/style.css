@@ -1,0 +1,418 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; 
+} 
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal; 
+}  
+body {
+  font-family: 'open_sansregular';
+  color: #333;  
+  margin:0;
+  padding:0; 
+}  
+header { 
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; 
+  color: #fff;
+}   
+ol, ul {
+  list-style: none;
+} 
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-light .navbar-brand {
+  font-family: 'open_sansbold';
+  font-size: 3rem;
+}
+.navbar-top {
+  border-bottom: 1px solid rgba(255,255,255,0.1); 
+}
+#navbarCollapse i {
+  margin-right: 5px;
+}
+#navbarCollapse ul li,
+.navbar-top-left ul li { 
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: 'open_sansbold';
+}
+#navbarCollapse ul li {
+  margin: 5px; 
+  font-size: 1rem;
+}
+#navbarCollapse ul li a {
+  padding: 10px 15px; 
+  border: 1px solid transparent;
+}
+#navbarCollapse ul li .nav-active,
+#navbarCollapse ul li a:hover {
+  border: 1px solid #fff;
+  border-radius: 2px; 
+  color: #fff;
+}
+.navbar-light .navbar-brand:focus, 
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+.navbar-top.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-top.navbar-light .navbar-nav .nav-link:hover {
+  color: #AC4147;
+}
+.navbar-top-left ul li { 
+  border-right: 1px solid rgba(255,255,255,0.1); 
+} 
+.navbar-top-left ul li:last-child { 
+  border-right: 0; 
+}
+.navbar-top-left ul li a { 
+  padding: 15px !important; 
+}
+.navbar-top-right ul li {
+  margin: 0px 7px;
+  font-size: 1.1rem;
+}
+.container {
+  position: relative;
+  z-index: 999;
+}
+.nav-tabs {
+  border-bottom: 4px solid #AC4147;
+}
+.nav-tabs .nav-link {
+  border-radius: 0;
+  color: #fff;
+  background-color: #524D61;
+  border-color: #524D61; 
+  margin-right: 1px;
+  padding: 12px 20px;
+}
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+    color: #fff;
+    background-color: #AC4147;
+    border-color: #AC4147;
+}
+.nav-tabs .nav-link i {
+  margin-right: 3px;
+}
+.tab-content {
+  background: rgba(247,247,249,0.95);
+  padding: 35px;
+}
+.tab-content h1 { 
+  font-family: 'open_sansbold';
+  font-size: 1.6rem;
+}
+.tab-content .btn-group-toggle>.btn {
+  font-size: 0.8rem;
+  padding: 5px 8px;
+}
+.tab-content .btn-secondary:not(:disabled):not(.disabled).active, 
+.tab-content .btn-secondary:not(:disabled):not(.disabled):active, 
+.tab-content .show>.btn-secondary.dropdown-toggle,
+.tab-content .btn-group-toggle>.btn:hover {
+    color: #fff;
+    background-color: #AC4147;
+    border-color: #AC4147;
+}
+.tab-content .btn-group-toggle .btn-secondary {
+    color: #333;
+    background-color: #fff;
+    border-color: #D9D9D7;
+}
+.btn-red { 
+  color: #fff;
+  background-color: #AC4147;
+  border-color: #AC4147;
+  padding: 8px 20px; 
+  font-size: 1rem;
+  font-family: 'open_sansbold';
+  border-radius: 2px;
+} 
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active {
+  background-color: #8A2228;
+  border-color: #8A2228; 
+  color: #fff;
+} 
+.form-group label {
+  font-size: 0.9rem;
+  font-family: 'open_sansbold';
+}
+.form-control {
+  height: 44px;
+  border: 2px solid #D9D9D7;
+  border-radius: 2px;
+}
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #9C9C9C;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: #9C9C9C;
+}
+.form-control:-ms-input-placeholder { /* IE 10+ */
+  color: #9C9C9C;
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+  color: #9C9C9C;
+}
+.advanced-srch {
+  font-family: 'open_sansbold';
+  font-style: italic;
+  color: #AC4147;
+  text-decoration: underline;
+}
+.advanced-srch:hover,
+.advanced-srch:focus {
+  color: #8A2228;
+}
+.tab-content .gj-datepicker-bootstrap [role=right-icon] button { 
+    border: 2px solid #D9D9D7;
+    background: #fff;
+}
+.tab-content .gj-datepicker-bootstrap [role=right-icon] button i { 
+    color: #D9D9D7;
+}
+ 
+/* Slider CSS */
+.cb-slideshow,
+.cb-slideshow:after { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0; 
+}
+.cb-slideshow:after { 
+    content: '';
+    background: transparent url(../images/pattern.png) repeat top left; 
+}
+.cb-slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+  -webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 36s linear infinite 0s;
+    -moz-animation: imageAnimation 36s linear infinite 0s;
+    -o-animation: imageAnimation 36s linear infinite 0s;
+    -ms-animation: imageAnimation 36s linear infinite 0s;
+    animation: imageAnimation 36s linear infinite 0s; 
+}
+.cb-slideshow li div { 
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    -webkit-animation: titleAnimation 36s linear infinite 0s;
+    -moz-animation: titleAnimation 36s linear infinite 0s;
+    -o-animation: titleAnimation 36s linear infinite 0s;
+    -ms-animation: titleAnimation 36s linear infinite 0s;
+    animation: titleAnimation 36s linear infinite 0s; 
+}
+.cb-slideshow li div h3 { 
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 240px;
+    padding: 0;
+    line-height: 200px; 
+}
+.cb-slideshow li:nth-child(1) span { 
+    background-image: url(../images/1.jpg) 
+}
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(../images/2.jpg);
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url(../images/3.jpg);
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) span { 
+    background-image: url(../images/2.jpg);
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) span { 
+    background-image: url(../images/1.jpg);
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) span { 
+    background-image: url(../images/3.jpg);
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s; 
+}
+.cb-slideshow li:nth-child(2) div { 
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) div { 
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) div { 
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) div { 
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) div { 
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s; 
+}
+/* Animation for the slideshow images */
+@-webkit-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -moz-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -o-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -o-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-ms-keyframes imageAnimation { 
+    0% { opacity: 0;
+    -ms-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -ms-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes imageAnimation { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+/* Animation for the title */
+@-webkit-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-ms-keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+/* Show at least something when animations not supported */
+.no-cssanimations .cb-slideshow li span{
+  opacity: 1;
+}
+
+@media screen and (max-width: 1140px) { 
+    .cb-slideshow li div h3 { font-size: 140px }
+}
+@media screen and (max-width: 600px) { 
+    .cb-slideshow li div h3 { font-size: 80px }
+}
